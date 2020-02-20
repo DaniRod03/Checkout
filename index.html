@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Carrinho</title>
 </head>
 
 <body>
     <header class="bg-secondary">
-        <nav class="navbar navbar-danger bg-danger justify-content-between">
-            <a class="navbar-brand text-light"><img src="img/insta.png" class="img-responsive">Carrinho de compras</a>
+        <nav class="navbar navbar-success bg-success justify-content-between">
+            <a class="navbar-brand text-light"><img src="img/Sem título.png" class="img-responsive">Carrinho de
+                compras</a>
             <button id="botao" class="btn btn-outline-light">Continuar comprando</button>
         </nav>
     </header>
@@ -30,33 +31,36 @@
                 <div class="p-2">
                     <div class="info form-group">
                         <label for="nome">Nome:</label>
-                        <input class="form-control" id="nome" type="text" name="nome" placeholder="Nome Completo">
+                        <input class="form-control" id="nome" type="text" name="nome" placeholder="Nome Completo"
+                            required>
                     </div>
 
                     <div class="info form-group">
-                        <label for="CPF">CPF:</label>
-                        <input class="form-control" id="CPF" type="text" name="cpf" placeholder="Digite o CPF">
+                        <label for="cpf">CPF:</label>
+                        <input class="form-control" id="cpf" type="text" name="cpf" placeholder="Digite o CPF" required>
                     </div>
 
                     <div class="info form-group">
                         <label for="tel">Telefone:</label>
-                        <input class="form-control" id="tel" type="tel" name="tel" placeholder="Digite o Telefone">
+                        <input class="form-control" id="tel" type="tel" name="tel" placeholder="Digite o Telefone"
+                            required>
                     </div>
 
                     <div class="info form-group">
                         <label for="mail">Email:</label>
-                        <input class="form-control" id="mail" type="email" name="email" placeholder="E-mail">
+                        <input class="form-control" id="mail" type="email" name="email" placeholder="E-mail" required>
                     </div>
 
                     <div class="info form-group">
                         <label for="pass">Senha:</label>
-                        <input class="form-control" id="pass" type="password" name="pass" placeholder="Crie sua senha">
+                        <input class="form-control" id="pass" type="password" name="pass" placeholder="Crie sua senha"
+                            required>
                     </div>
 
                     <div class="info form-group">
                         <label for="confpass">Confirmar senha:</label>
-                        <input class="form-control" id="confpass" type="confpass" name="nome"
-                            placeholder="Repita a senha">
+                        <input class="form-control" id="confpass" type="password" name="nome"
+                            placeholder="Repita a senha" required>
                     </div>
                 </div>
             </div>
@@ -70,7 +74,8 @@
 
                     <div class="info form-group">
                         <label for="cep">CEP:</label>
-                        <input class="form-control" id="cep" type="text" name="cep" placeholder="Digite seu CEP">
+                        <input class="form-control" id="cep" type="text" name="cep" placeholder="Digite seu CEP"
+                            required>
                     </div>
 
                     <div class="info form-group">
@@ -98,7 +103,7 @@
                     <div class="input-group form-group row">
                         <div class="col-6">
                             <label for="city">Cidade:</label>
-                            <input id="city" class="form-control" type="text" placeholder="Cidade">
+                            <input id="city" class="form-control" type="text" placeholder="Cidade" required>
                         </div>
                         <div class="col-6">
                             <label for="est">Estado:</label>
@@ -137,56 +142,74 @@
                             </div>
                             <div class="card-body row">
                                 <div class="col-4">
-                                <img id="produto" src="img/101222_1554834382_index_g.jpg" class="img-responsive">
-                            </div>
+                                    <img id="produto" src="img/101222_1554834382_index_g.jpg" alt="produto"
+                                        title="produto" class="img-responsive">
+                                </div>
                                 <p>Preço:</p>
                             </div>
                         </div>
                     </div>
                     <div class="p-2">
                         <div class="form-group">
-                            <label for="cartao">Numero do Cartão</label>
-                            <input id="cartao" type="number" class="form-control" name="cartao"
-                                placeholder="Digite o numero">
+                            <label for="cartao">Numero do Cartão:</label>
+                            <input id="cartao" type="text" class="form-control" name="cartao"
+                                placeholder="Digite o numero" required>
                         </div>
                         <div class="form-group row">
                             <div class="col-9">
                                 <Label for="val">Validade:</Label>
-                                <input id="val" type="month" class="form-control" name="val" placeholder="Validade">
+                                <input id="val" type="month" class="form-control" name="val" placeholder="Validade"
+                                    required>
                             </div>
                             <div class="col-3">
                                 <Label for="seg">CVV:</Label>
-                                <input id="seg" type="text" class="form-control" name="seg" placeholder="CVV">
+                                <input id="seg" type="text" class="form-control" name="seg" placeholder="CVV" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <Label for="titnome">Nome do Titular:</Label>
                             <input id="titnome" type="text" class="form-control" name="titnome"
-                                placeholder="Nome do Titular">
+                                placeholder="Nome do Titular" required>
                         </div>
                         <div class="form-group">
                             <Label for="titcpf">CPF do Titular:</Label>
                             <input id="titcpf" type="text" class="form-control" name="titcpf"
-                                placeholder="CPF do Titular">
+                                placeholder="CPF do Titular" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-2">
+                            <button class="btn btn-success btn-block" type="button" data-toggle="modal" data-target="#finalizar">Finalizar Compra</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <button class="btn btn-success btn-block">Finalizar Compra</button>
+
+
+        </form>
+        <div id="finalizar" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Compra Realizada com Sucesso</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Parabéns pela sua compra</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
                 </div>
             </div>
-            
-        </form>
-
+        </div>
     </main>
 
 
 
-
-    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -196,6 +219,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
